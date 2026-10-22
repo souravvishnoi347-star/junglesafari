@@ -507,11 +507,11 @@
                     <!-- Timings Grid -->
                     <div class="timings-grid-container">
                         <!-- Entry Timing Card -->
-                        <div style="background:#fff; border-radius:14px; padding:24px; border:1px solid var(--gray-200); box-shadow:var(--shadow-sm);">
-                            <h3 style="color:var(--primary); font-size:1.25rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+                        <div class="timing-card">
+                            <h3 class="timing-card-title">
                                 <span>🕒</span> Safari Gypsy Entry Timing
                             </h3>
-                            <div style="overflow-x:auto;">
+                            <div class="table-responsive">
                                 <table class="info-table" style="margin:0;">
                                     <thead>
                                         <tr>
@@ -542,11 +542,11 @@
                         </div>
 
                         <!-- Exit Timing Card -->
-                        <div style="background:#fff; border-radius:14px; padding:24px; border:1px solid var(--gray-200); box-shadow:var(--shadow-sm);">
-                            <h3 style="color:var(--primary); font-size:1.25rem; margin-bottom:14px; display:flex; align-items:center; gap:8px;">
+                        <div class="timing-card">
+                            <h3 class="timing-card-title">
                                 <span>🚪</span> Safari Gypsy Last Exit Timing
                             </h3>
-                            <div style="overflow-x:auto;">
+                            <div class="table-responsive">
                                 <table class="info-table" style="margin:0;">
                                     <thead>
                                         <tr>
@@ -580,79 +580,83 @@
                     <!-- Price Breakdown Grid -->
                     <div class="tariff-cards-grid">
                         <!-- For Indians Card -->
-                        <div style="background:#fff; border-radius:14px; padding:26px; border:2px solid var(--primary); box-shadow:var(--shadow-md);">
+                        <div class="tariff-card for-indians">
                             <div style="text-align:center; margin-bottom:16px;">
                                 <span style="background:var(--primary); color:#fff; font-size:0.8rem; font-weight:800; padding:4px 16px; border-radius:20px; letter-spacing:1px; text-transform:uppercase;">Domestic Visitors</span>
                                 <h3 style="margin-top:10px; color:var(--primary); font-size:1.4rem;">TICKET PRICE &amp; SAFARI COST (FOR INDIANS)</h3>
                             </div>
-                            <table style="width:100%; border-collapse:collapse; font-size:0.94rem;">
-                                <thead>
-                                    <tr style="background:#f4f9f4; border-bottom:2px solid var(--primary);">
-                                        <th style="padding:10px 14px; text-align:left; color:var(--primary-dark);">FEES HEAD</th>
-                                        <th style="padding:10px 14px; text-align:right; color:var(--primary-dark);">AMOUNT TO PAY</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Park Entrance (Adults)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 150/- <span style="font-size:0.8rem; font-weight:400; color:#666;">(₹500 for special core)</span></td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Children (5-12 Years)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 150/- per child</td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Road Tax / Entry</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 250/- (One Time)</td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Gypsy / Safari Vehicle</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 3,000/- per vehicle <span style="font-size:0.8rem; font-weight:400; color:#666;">(Up to 6 Pax)</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:10px 14px;">Authorized Guide (If Needed)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--primary);">₹ 1,000/-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table style="width:100%; border-collapse:collapse; font-size:0.94rem;">
+                                    <thead>
+                                        <tr style="background:#f4f9f4; border-bottom:2px solid var(--primary);">
+                                            <th style="padding:10px 14px; text-align:left; color:var(--primary-dark);">FEES HEAD</th>
+                                            <th style="padding:10px 14px; text-align:right; color:var(--primary-dark);">AMOUNT TO PAY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Park Entrance (Adults)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 150/- <span style="font-size:0.8rem; font-weight:400; color:#666;">(₹500 for special core)</span></td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Children (5-12 Years)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 150/- per child</td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Road Tax / Entry</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 250/- (One Time)</td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Gypsy / Safari Vehicle</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 3,000/- per vehicle <span style="font-size:0.8rem; font-weight:400; color:#666;">(Up to 6 Pax)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:10px 14px;">Authorized Guide (If Needed)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--primary);">₹ 1,000/-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
                         <!-- For Foreigners Card -->
-                        <div style="background:#fff; border-radius:14px; padding:26px; border:2px solid var(--accent); box-shadow:var(--shadow-md);">
+                        <div class="tariff-card for-foreigners">
                             <div style="text-align:center; margin-bottom:16px;">
                                 <span style="background:var(--accent); color:#121820; font-size:0.8rem; font-weight:800; padding:4px 16px; border-radius:20px; letter-spacing:1px; text-transform:uppercase;">International Visitors</span>
                                 <h3 style="margin-top:10px; color:var(--accent-dark); font-size:1.4rem;">TICKET PRICE &amp; SAFARI COST (FOR FOREIGNER)</h3>
                             </div>
-                            <table style="width:100%; border-collapse:collapse; font-size:0.94rem;">
-                                <thead>
-                                    <tr style="background:#fff9ed; border-bottom:2px solid var(--accent);">
-                                        <th style="padding:10px 14px; text-align:left; color:#121820;">FEES HEAD</th>
-                                        <th style="padding:10px 14px; text-align:right; color:#121820;">AMOUNT TO PAY</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Park Entrance (Adults)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 600/- per person</td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Children (5-12 Years)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 250/- (One Time)</td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Road Tax / Entry</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 500/- (One Time)</td>
-                                    </tr>
-                                    <tr style="border-bottom:1px solid #eee;">
-                                        <td style="padding:10px 14px;">Gypsy / Safari Vehicle</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 3,000/- per vehicle <span style="font-size:0.8rem; font-weight:400; color:#666;">(Up to 6 Pax)</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td style="padding:10px 14px;">Authorized Guide (If Needed)</td>
-                                        <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--primary);">₹ 1,000/-</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table style="width:100%; border-collapse:collapse; font-size:0.94rem;">
+                                    <thead>
+                                        <tr style="background:#fff9ed; border-bottom:2px solid var(--accent);">
+                                            <th style="padding:10px 14px; text-align:left; color:#121820;">FEES HEAD</th>
+                                            <th style="padding:10px 14px; text-align:right; color:#121820;">AMOUNT TO PAY</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Park Entrance (Adults)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 600/- per person</td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Children (5-12 Years)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 250/- (One Time)</td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Road Tax / Entry</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 500/- (One Time)</td>
+                                        </tr>
+                                        <tr style="border-bottom:1px solid #eee;">
+                                            <td style="padding:10px 14px;">Gypsy / Safari Vehicle</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700;">₹ 3,000/- per vehicle <span style="font-size:0.8rem; font-weight:400; color:#666;">(Up to 6 Pax)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td style="padding:10px 14px;">Authorized Guide (If Needed)</td>
+                                            <td style="padding:10px 14px; text-align:right; font-weight:700; color:var(--primary);">₹ 1,000/-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
                     </div>
 
