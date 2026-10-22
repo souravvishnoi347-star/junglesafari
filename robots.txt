@@ -1,0 +1,42 @@
+# Jungle Safari Uttarakhand
+# https://www.junglesafariuttarakhand.com
+
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Allow: /assets/images/
+Allow: /assets/videos/
+Allow: /assets/css/
+Allow: /assets/js/
+
+Sitemap: https://www.junglesafariuttarakhand.com/sitemap.xml
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+# Bing
+User-agent: Bingbot
+Allow: /
+
+# AI Crawlers (for GEO / AEO)
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
