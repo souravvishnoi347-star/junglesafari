@@ -65,13 +65,18 @@
           "image": "https://www.junglesafariuttarakhand.com/assets/images/rajaji-national-park.jpg",
           "@id": "https://www.junglesafariuttarakhand.com/rajaji-national-park.html#touristattraction",
           "url": "https://www.junglesafariuttarakhand.com/rajaji-national-park.html",
-          "telephone": "+91-9012059347",
+          "telephone": "+91-9675667921",
+          "sameAs": [
+            "https://youtube.com/@official_rajaji_tiger_reserve?si=nEp9XudY5gpxRsQb",
+            "https://www.facebook.com/share/1AscGkV1Mb/",
+            "https://www.instagram.com/jungle.safari.uttrakhand.india?igsh=NTZjOTA4MHRhbXVp"
+          ],
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "Rajaji National Park, Chilla Range",
-            "addressLocality": "Haridwar",
+            "streetAddress": "Chilla Dam",
+            "addressLocality": "Yamkeshwar",
             "addressRegion": "Uttarakhand",
-            "postalCode": "249401",
+            "postalCode": "249306",
             "addressCountry": "IN"
           },
           "geo": {
@@ -762,6 +767,39 @@
                 font-size: 0.82rem;
                 table-layout: auto !important;
             }
+            .info-table.table-2col {
+                min-width: 100% !important;
+                width: 100% !important;
+                table-layout: auto !important;
+            }
+            .info-table.table-2col th:first-child,
+            .info-table.table-2col td:first-child {
+                width: 46% !important;
+            }
+            .info-table.table-2col th:last-child,
+            .info-table.table-2col td:last-child {
+                width: 54% !important;
+            }
+            .tariff-package-card {
+                padding: 20px 16px !important;
+            }
+            .tariff-package-header {
+                flex-direction: column !important;
+                align-items: stretch !important;
+            }
+            .tariff-package-estimate {
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+            .tariff-actions {
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+            .tariff-actions .btn {
+                width: 100% !important;
+                text-align: center !important;
+                justify-content: center !important;
+            }
             .info-table thead th,
             .info-table tbody td {
                 padding: 10px 12px !important;
@@ -783,7 +821,6 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rajaji-national-park.html" class="active">Rajaji Safari</a></li>
-                <li><a href="jim-corbett.html">Jim Corbett</a></li>
                 <li><a href="safari-packages.html">Safari Tours</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -823,7 +860,7 @@
                         <h2>About Rajaji National Park</h2>
                         <p><strong>Rajaji National Park</strong> is one of India's most ecologically significant national parks and tiger reserves, sprawling across <strong>820 square kilometres</strong> in the Shivalik range of the western Himalayas. Straddling three districts — <strong>Haridwar, Dehradun, and Pauri Garhwal</strong> — in the state of Uttarakhand, the park represents the north-western limit of the tropical and subtropical moist broadleaf forest biome. It was officially declared a national park on 15 September 1983 by merging three existing wildlife sanctuaries — <strong>Rajaji Sanctuary, Motichur Sanctuary, and Chilla Sanctuary</strong> — into a single protected area. The park is named after <strong>C. Rajagopalachari</strong>, affectionately known as Rajaji, who was the last Governor-General of independent India and a stalwart of the Indian independence movement.</p>
 
-                        <p>What sets Rajaji National Park apart from other Indian wildlife reserves is its extraordinary <strong>Asian elephant population</strong>. With over <strong>500 wild Asian elephants</strong> roaming its sal forests, riverine habitats, and grasslands, Rajaji harbours one of the largest and most genetically viable elephant herds in all of India. The park forms a critical segment of the <strong>Rajaji–Corbett Elephant Reserve</strong>, which serves as a vital corridor for elephant migration between the Shivalik foothills and the Terai grasslands. In 2015, the park was granted <strong>Tiger Reserve status</strong>, further elevating its conservation importance and bringing in additional resources for habitat protection and anti-poaching operations.</p>
+                        <p>What sets Rajaji National Park apart from other Indian wildlife reserves is its extraordinary <strong>Asian elephant population</strong>. With over <strong>500 wild Asian elephants</strong> roaming its sal forests, riverine habitats, and grasslands, Rajaji harbours one of the largest and most genetically viable elephant herds in all of India. The park forms a critical segment of the <strong>Shivalik Elephant Reserve</strong>, which serves as a vital corridor for elephant migration between the Shivalik foothills and the Terai grasslands. In 2015, the park was granted <strong>Tiger Reserve status</strong>, further elevating its conservation importance and bringing in additional resources for habitat protection and anti-poaching operations.</p>
 
                         <p>Beyond elephants and tigers, Rajaji is a biodiversity hotspot that supports <strong>Royal Bengal Tigers (50+), Indian leopards, Himalayan black bears, sloth bears, king cobras</strong>, and an astounding array of over <strong>315 bird species</strong> — making it a paradise for ornithologists and wildlife photographers alike. The park's terrain transitions dramatically from the <strong>Ganges River floodplains</strong> in the south to rugged Shivalik ridges in the north, creating a mosaic of habitats including dense sal forests, scrub jungles, riverine woodlands, and alpine meadows. Whether you're an ardent wildlife enthusiast, a serious birdwatcher, or a family seeking an unforgettable nature experience, a safari in Rajaji promises encounters with the wild that remain etched in memory forever.</p>
                     </article>
@@ -911,8 +948,178 @@
                         </table>
                         </div>
 
+                        <!-- Official Safari Ticket Price & Tariff Breakdown Section -->
+                        <div class="safari-pricing-section" id="safari-pricing" style="margin-top:40px;">
+                            <div style="margin-bottom:20px;">
+                                <div style="display:inline-block; background:rgba(45,106,79,0.12); color:var(--primary-green); font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:4px 14px; border-radius:20px; margin-bottom:8px;">
+                                    Authorized Forest Tariffs
+                                </div>
+                                <h2 style="margin:0 0 6px 0; font-size:1.85rem; color:var(--dark-green); font-family:'Playfair Display',serif;">Official Safari Ticket Price &amp; Tariff Breakdown</h2>
+                                <p style="margin:0; color:#555; font-size:1.02rem;">Forest Department Entry Permits &amp; Registered 4x4 Gypsy Charges</p>
+                            </div>
+
+                            <!-- Two Side-by-Side Tariff Cards (Indian & Foreigner) -->
+                            <div class="tariff-cards-grid">
+                                
+                                <!-- Card 1: For Indians -->
+                                <div class="tariff-card for-indians">
+                                    <div class="tariff-card-header">
+                                        <div>
+                                            <span class="tariff-badge tariff-badge-indian">🇮🇳 Domestic Tourists</span>
+                                            <h3 class="tariff-card-title" style="margin-top:6px; color:var(--dark-green);">FOR INDIANS</h3>
+                                        </div>
+                                        <div style="font-size:1.8rem;" aria-hidden="true">🇮🇳</div>
+                                    </div>
+
+                                    <div class="table-responsive" style="margin:0 0 14px 0;">
+                                        <table class="info-table table-2col" style="margin:0; box-shadow:none;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Particulars</th>
+                                                    <th>Official Fee</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Adults (Entry Permit)</strong></td>
+                                                    <td><span class="tariff-price-val">₹500/-</span> <span class="tariff-unit">per person</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Children (5–12 years)</strong></td>
+                                                    <td><span class="tariff-price-val">₹150/-</span> <span class="tariff-unit">per child (Below 5 Free)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Road Tax / Entry Fee</strong></td>
+                                                    <td><span class="tariff-price-val">₹250/-</span> <span class="tariff-unit">(One Gypsy)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Safari Gypsy Charges</strong></td>
+                                                    <td><span class="tariff-price-val">₹3,000/-</span> <span class="tariff-unit">per vehicle (up to 6 persons)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Certified Guide Fee</strong></td>
+                                                    <td><span class="tariff-price-val">₹1,000/-</span> <span class="tariff-unit">(Expert Nature Guide)</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="tariff-note">
+                                        📌 <strong>Govt ID Mandatory:</strong> Children below 5 yrs enter complimentary. Valid government photo ID (Aadhaar, Voter ID, Passport) required for all Indian visitors.
+                                    </div>
+
+                                    <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20an%20Indian%20Permit%20Safari%20at%20Rajaji." class="btn btn-green btn-sm" target="_blank" rel="noopener" style="margin-top:14px; width:100%; font-weight:700;">
+                                        <span>💬 Book Indian Permit Safari</span>
+                                    </a>
+                                </div>
+
+                                <!-- Card 2: For Foreigners -->
+                                <div class="tariff-card for-foreigners">
+                                    <div class="tariff-card-header">
+                                        <div>
+                                            <span class="tariff-badge tariff-badge-foreigner">🌐 International Visitors</span>
+                                            <h3 class="tariff-card-title" style="margin-top:6px; color:#8c6708;">FOR FOREIGNERS</h3>
+                                        </div>
+                                        <div style="font-size:1.8rem;" aria-hidden="true">🌍</div>
+                                    </div>
+
+                                    <div class="table-responsive" style="margin:0 0 14px 0;">
+                                        <table class="info-table table-2col" style="margin:0; box-shadow:none;">
+                                            <thead>
+                                                <tr>
+                                                    <th>Particulars</th>
+                                                    <th>Official Fee</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Adults (Park Entrance)</strong></td>
+                                                    <td><span class="tariff-price-val">₹600/-</span> <span class="tariff-unit">per person</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Children (5–12 years)</strong></td>
+                                                    <td><span class="tariff-price-val">₹250/-</span> <span class="tariff-unit">(One Time / per child)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Road Tax / Entry Fee</strong></td>
+                                                    <td><span class="tariff-price-val">₹500/-</span> <span class="tariff-unit">(One Gypsy)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Safari Gypsy Charges</strong></td>
+                                                    <td><span class="tariff-price-val">₹3,000/-</span> <span class="tariff-unit">per vehicle (up to 6 persons)</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Certified Guide Fee</strong></td>
+                                                    <td><span class="tariff-price-val">₹1,000/-</span> <span class="tariff-unit">(Expert Nature Guide)</span></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="tariff-note" style="border-left-color:var(--accent);">
+                                        📌 <strong>Passport &amp; Visa Required:</strong> Valid international passport and visa copies are mandatory to obtain official Forest Department permits for foreign nationals.
+                                    </div>
+
+                                    <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20a%20Foreigner%20Permit%20Safari%20at%20Rajaji." class="btn btn-primary btn-sm" target="_blank" rel="noopener" style="margin-top:14px; width:100%; font-weight:700;">
+                                        <span>💬 Book Foreigner Permit Safari</span>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <!-- Summary Card: Jeep Safari Package Estimate -->
+                            <div class="tariff-package-card">
+                                <div class="tariff-package-header">
+                                    <div>
+                                        <span style="display:inline-block; background:rgba(212,160,23,0.25); color:#ffd166; font-size:0.78rem; font-weight:700; text-transform:uppercase; letter-spacing:1px; padding:3px 12px; border-radius:12px; margin-bottom:6px;">
+                                            All-Inclusive Package Estimate
+                                        </span>
+                                        <h3 style="margin:4px 0 6px 0; color:#fff; font-size:1.45rem; font-family:'Playfair Display', serif;">
+                                            🚙 Complete Jeep Safari Package Estimate
+                                        </h3>
+                                        <p style="margin:0; color:rgba(255,255,255,0.85); font-size:0.95rem;">
+                                            Includes registered 4x4 Gypsy vehicle, forest entry permits, gate toll, driver allowance &amp; certified expert tracker.
+                                        </p>
+                                    </div>
+                                    <div class="tariff-package-estimate">
+                                        <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.8px; color:rgba(255,255,255,0.8);">Approx Cost Per Gypsy</div>
+                                        <div style="font-size:1.6rem; font-weight:800; color:#ffd166; font-family:'Playfair Display', serif;">INR 3,500 to 5,000</div>
+                                        <div style="font-size:0.75rem; color:rgba(255,255,255,0.75);">Depending on Zone &amp; Season</div>
+                                    </div>
+                                </div>
+
+                                <div class="tariff-zones-box">
+                                    <div style="font-size:0.88rem; font-weight:600; color:#ffd166; margin-bottom:8px;">
+                                        📍 Available Safari Zone Options:
+                                    </div>
+                                    <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                                        <span class="tariff-zone-pill">🌿 Chilla Zone</span>
+                                        <span class="tariff-zone-pill">🌿 Motichur Zone</span>
+                                        <span class="tariff-zone-pill">🌿 Chillawali Zone</span>
+                                        <span class="tariff-zone-pill">🌿 Haridwar Gate</span>
+                                        <span class="tariff-zone-pill">🌿 Gohari Zone</span>
+                                    </div>
+                                    <p style="margin:10px 0 0 0; font-size:0.82rem; color:rgba(255,255,255,0.75);">
+                                        *Additional costs: Forest department commercial camera permits (if carrying professional video/DSLR gear). Final gypsy rates vary based on gate distance and peak holiday dates.
+                                    </p>
+                                </div>
+
+                                <!-- Action Buttons -->
+                                <div class="tariff-actions" style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
+                                    <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20a%20Rajaji%20Jungle%20Safari." class="btn btn-green btn-lg" target="_blank" rel="noopener" style="background:#25d366; color:#fff; font-weight:700; border:none; box-shadow:0 4px 18px rgba(37,211,102,0.4);">
+                                        <i class="fab fa-whatsapp" style="font-size:1.2rem;"></i>
+                                        <span>Click to Book Your Safari / Book on WhatsApp</span>
+                                    </a>
+                                    <a href="tel:+919675667921" class="btn btn-primary btn-lg" style="font-weight:700;">
+                                        <i class="fas fa-phone-alt"></i>
+                                        <span>📞 Call: +91 96756 67921</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
                         <h2 style="margin-top:35px;">Official Safari Booking &amp; Entry Permit Guidelines</h2>
-                        <p>All jungle safaris inside Rajaji National Park are governed by strict Uttarakhand Forest Department regulations and vehicle entry quotas. Here is what is included with every safari booking arranged by certified naturalists Talib Hussain &amp; Shahrukh Khan:</p>
+                        <p>All jungle safaris inside Rajaji National Park are governed by strict Uttarakhand Forest Department regulations and vehicle entry quotas. Here is what is included with every safari booking arranged by certified naturalists Jishan Rehman &amp; Rehman:</p>
 
                         <div class="permit-info-card" style="margin-top:20px; background:linear-gradient(135deg, #f7faf7 0%, #edf7ee 100%); border-radius:14px; padding:24px 20px; border:1px solid #d4e8d6;">
                             <h3 style="color:var(--dark-green); font-size:1.25rem; margin-bottom:14px; font-family:'Playfair Display',serif;">📋 Complete Safari Inclusions</h3>
@@ -931,17 +1138,17 @@
                                 </div>
                             </div>
                             <div style="display:flex; flex-wrap:wrap; gap:12px; align-items:center;">
-                                <a href="https://wa.me/919012059347?text=Hi%20Talib%20Ji,%20I%20want%20to%20book%20a%20Rajaji%20National%20Park%20Safari." class="btn btn-green" target="_blank" rel="noopener" style="padding:10px 22px;">
+                                <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20a%20Rajaji%20National%20Park%20Safari." class="btn btn-green" target="_blank" rel="noopener" style="padding:10px 22px;">
                                     <span>💬 Check Permit &amp; Book via WhatsApp</span>
                                 </a>
-                                <a href="tel:+919012059347" class="btn btn-primary" style="padding:10px 22px;">
+                                <a href="tel:+919675667921" class="btn btn-primary" style="padding:10px 22px;">
                                     <span>📞 Call for Instant Booking</span>
                                 </a>
                             </div>
                         </div>
 
                         <div style="margin-top:20px; background:#f4f9f4; padding:16px 20px; border-radius:10px; border-left:4px solid var(--primary-green); font-size:0.92rem; color:#444;">
-                            ℹ️ <strong>Expert Booking Tip:</strong> Safari permits are strictly regulated with quota limits for each gate (Chilla, Motichur, Ranipur). To guarantee your Gypsy and naturalist guide, booking in advance with <strong>Talib Hussain</strong> &amp; <strong>Shahrukh Khan</strong> is recommended.
+                            ℹ️ <strong>Expert Booking Tip:</strong> Safari permits are strictly regulated with quota limits for each gate (Chilla, Motichur, Ranipur). To guarantee your Gypsy and naturalist guide, booking in advance with <strong>Jishan Rehman</strong> &amp; <strong>Rehman</strong> is recommended.
                         </div>
                     </section>
 
@@ -1168,7 +1375,7 @@
                                 <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
                             </button>
                             <div class="faq-answer" style="display:none;">
-                                <p>Safari bookings include official Uttarakhand Forest Department gate permits, an exclusive 4x4 open safari Gypsy accommodating up to 6 passengers, a certified driver, road taxes, and an authorized naturalist guide like Talib Hussain or Shahrukh Khan. Contact our team on WhatsApp or phone for current permit slot availability and instant confirmation.</p>
+                                <p>Safari bookings include official Uttarakhand Forest Department gate permits, an exclusive 4x4 open safari Gypsy accommodating up to 6 passengers, a certified driver, road taxes, and an authorized naturalist guide like Jishan Rehman. Contact our team on WhatsApp or phone for current permit slot availability and instant confirmation.</p>
                             </div>
                         </div>
 
@@ -1232,12 +1439,16 @@
                     <div class="sidebar-card">
                         <h3>📞 Book Your Safari</h3>
                         <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span style="font-size:0.9rem;">Chilla Dam, Yamkeshwar, 249306</span>
+                        </div>
+                        <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <a href="tel:+919012059347">+91-90120 59347</a>
+                            <a href="tel:+919675667921">+91 96756 67921</a>
                         </div>
                         <div class="contact-item">
                             <i class="fab fa-whatsapp" style="color:#25d366;"></i>
-                            <a href="https://wa.me/919012059347?text=Hi%2C%20I%20want%20to%20book%20a%20Rajaji%20Safari" target="_blank" rel="noopener">WhatsApp Us</a>
+                            <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20a%20Rajaji%20Jungle%20Safari." target="_blank" rel="noopener">WhatsApp Us</a>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
@@ -1311,13 +1522,25 @@
     <!-- Footer -->
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container text-center">
+            <p class="mb-2">📍 Chilla Dam, Yamkeshwar, 249306, Uttarakhand, India | 📞 <a href="tel:+919675667921" style="color:#d4a373; text-decoration:none;">+91 96756 67921</a></p>
+            <div class="footer-social" style="justify-content:center; margin-bottom:15px;">
+                <a href="https://youtube.com/@official_rajaji_tiger_reserve?si=nEp9XudY5gpxRsQb" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/1AscGkV1Mb/" target="_blank" rel="noopener" aria-label="Facebook">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/jungle.safari.uttrakhand.india?igsh=NTZjOTA4MHRhbXVp" target="_blank" rel="noopener" aria-label="Instagram">
+                    <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+            </div>
             <p class="mb-0">&copy; 2026 Jungle Safari Tours Uttarakhand. All Rights Reserved.</p>
             <p class="small text-muted mt-2">Designed for optimal SEO, GEO, and AEO performance.</p>
         </div>
     </footer>
 
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/919012059347?text=Hi%2C%20I%20want%20to%20book%20a%20Rajaji%20National%20Park%20Safari" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <a href="https://wa.me/919675667921?text=Hi%20Jishan%20Rehman,%20I%20want%20to%20book%20a%20Rajaji%20Jungle%20Safari." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
         <i class="fab fa-whatsapp"></i>
     </a>
 
