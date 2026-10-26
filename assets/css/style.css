@@ -1320,10 +1320,24 @@ p { margin-bottom: 1rem; }
   gap: 10px;
   align-items: center;
   font-size: 0.94rem;
+  flex-wrap: wrap;
 }
-.breadcrumb-nav a { color: rgba(255, 255, 255, 0.75); }
+.breadcrumb-nav a { color: rgba(255, 255, 255, 0.75); text-decoration: none; }
 .breadcrumb-nav a:hover { color: var(--accent); }
 .breadcrumb-nav span { color: rgba(255, 255, 255, 0.5); }
+.breadcrumb, ol.breadcrumb, ul.breadcrumb {
+  list-style: none !important;
+  list-style-type: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 8px !important;
+}
+.breadcrumb li, .breadcrumb-item {
+  list-style: none !important;
+  list-style-type: none !important;
+}
 
 /* ---------- Tables & Sidebar (Inner Pages) ---------- */
 .info-table {

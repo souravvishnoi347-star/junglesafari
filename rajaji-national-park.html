@@ -233,21 +233,21 @@
             margin-bottom: 15px;
             text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
         }
-        .breadcrumb-section .breadcrumb {
+        .breadcrumb-section .breadcrumb-nav {
             justify-content: center;
-            background: transparent;
-            margin-bottom: 10px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
         }
-        .breadcrumb-section .breadcrumb-item a {
-            color: var(--accent-gold);
+        .breadcrumb-section .breadcrumb-nav a {
+            color: rgba(255, 255, 255, 0.85);
             text-decoration: none;
-            font-weight: 500;
+            transition: color 0.3s ease;
         }
-        .breadcrumb-section .breadcrumb-item.active {
-            color: #ffffffcc;
-        }
-        .breadcrumb-section .breadcrumb-item + .breadcrumb-item::before {
-            color: #ffffff99;
+        .breadcrumb-section .breadcrumb-nav a:hover {
+            color: var(--accent-gold);
         }
         .breadcrumb-section .tagline {
             font-size: 1.15rem;
@@ -836,12 +836,11 @@
     <!-- Breadcrumb Hero Section -->
     <section class="breadcrumb-section">
         <div class="container">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Rajaji National Park Safari</li>
-                </ol>
-            </nav>
+            <div class="breadcrumb-nav" style="justify-content:center; margin-bottom:14px;">
+                <a href="index.html">Home</a>
+                <span style="color:rgba(255,255,255,0.6);">/</span>
+                <span style="color:var(--accent-gold); font-weight:600;">Rajaji National Park Safari</span>
+            </div>
             <h1>Rajaji National Park Safari</h1>
             <p class="tagline">Discover the majestic wilderness of Uttarakhand's premier elephant habitat — 820 sq km of untamed Shivalik beauty awaits.</p>
         </div>
