@@ -67,16 +67,29 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Scroll Reveal Animation ---------- */
   const revealElements = document.querySelectorAll('.reveal');
   if (revealElements.length) {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.02, rootMargin: '0px 0px 60px 0px' });
+
+      revealElements.forEach(el => observer.observe(el));
+
+      // Immediate check for elements already in or near viewport on initial render
+      revealElements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight + 80) {
+          el.classList.add('visible');
         }
       });
-    }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
-
-    revealElements.forEach(el => observer.observe(el));
+    } else {
+      // Fallback: reveal all immediately if observer is unsupported
+      revealElements.forEach(el => el.classList.add('visible'));
+    }
   }
 
   /* ---------- Counter Animation ---------- */
