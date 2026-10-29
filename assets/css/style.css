@@ -361,17 +361,16 @@ p { margin-bottom: 1rem; }
   padding: 150px 0 90px;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at 80% 20%, rgba(45, 138, 66, 0.3) 0%, transparent 60%),
-              linear-gradient(135deg, #07190d 0%, #0d2818 45%, #151e28 100%);
+  background: #07190d;
   overflow: hidden;
 }
 
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: url('../images/tiger%20walking%20behind%20him%20a%20safari%20tour.jpg') center/cover no-repeat;
-  opacity: 0.38;
-  mix-blend-mode: overlay;
+  background: linear-gradient(to right, rgba(7, 25, 13, 0.88) 0%, rgba(7, 25, 13, 0.70) 45%, rgba(7, 25, 13, 0.35) 100%),
+              url('../images/safari-gypsy-convoy-sunset.jpg') center center / cover no-repeat;
+  opacity: 1;
   pointer-events: none;
   z-index: 1;
 }
@@ -1310,7 +1309,8 @@ p { margin-bottom: 1rem; }
 .call-float {
   position: fixed;
   bottom: 96px;
-  right: 25px;
+  left: 25px;
+  right: auto;
   z-index: 9999;
   width: 62px;
   height: 62px;
@@ -1345,7 +1345,8 @@ p { margin-bottom: 1rem; }
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
-  right: 25px;
+  left: 25px;
+  right: auto;
   z-index: 9999;
   width: 62px;
   height: 62px;
@@ -1837,6 +1838,10 @@ p { margin-bottom: 1rem; }
     padding: 110px 0 50px;
     text-align: center;
   }
+  .hero-bg {
+    background: linear-gradient(to bottom, rgba(7, 25, 13, 0.88) 0%, rgba(7, 25, 13, 0.72) 55%, rgba(7, 25, 13, 0.45) 100%),
+                url('../images/safari-gypsy-convoy-sunset.jpg') center center / cover no-repeat !important;
+  }
   .hero-content {
     margin: 0 auto;
   }
@@ -2072,7 +2077,8 @@ p { margin-bottom: 1rem; }
   }
   .call-float {
     bottom: 78px !important;
-    right: 18px !important;
+    left: 18px !important;
+    right: auto !important;
     width: 52px !important;
     height: 52px !important;
   }
@@ -2082,7 +2088,8 @@ p { margin-bottom: 1rem; }
   }
   .whatsapp-float {
     bottom: 18px !important;
-    right: 18px !important;
+    left: 18px !important;
+    right: auto !important;
     width: 52px !important;
     height: 52px !important;
     font-size: 1.55rem !important;
