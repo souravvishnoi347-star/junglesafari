@@ -233,4 +233,58 @@ document.addEventListener('DOMContentLoaded', () => {
     startAutoPlay();
   }
 
+  /* ---------- Certificate Modal Lightbox Logic ---------- */
+  const certBackdrop = document.getElementById('certModalBackdrop');
+  if (certBackdrop) {
+    const certModalImg = document.getElementById('certModalImg');
+    const certModalName = document.getElementById('certModalName');
+    const certModalRole = document.getElementById('certModalRole');
+    const certModalID = document.getElementById('certModalID');
+    const certCloseBtn = document.getElementById('certModalClose');
+
+    const openCertModal = (certSrc, name, certId, role) => {
+      if (!certModalImg) return;
+      certModalImg.src = certSrc;
+      if (certModalName) certModalName.textContent = name;
+      if (certModalRole) certModalRole.textContent = role;
+      if (certModalID) certModalID.textContent = 'Identifier / Cert No: ' + certId;
+      certBackdrop.classList.add('show');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeCertModal = () => {
+      certBackdrop.classList.remove('show');
+      document.body.style.overflow = '';
+    };
+
+    document.querySelectorAll('.btn-open-cert').forEach(trigger => {
+      trigger.addEventListener('click', (e) => {
+        e.preventDefault();
+        const src = trigger.getAttribute('data-cert');
+        const name = trigger.getAttribute('data-name') || 'Official Certificate';
+        const certId = trigger.getAttribute('data-certid') || '';
+        const role = trigger.getAttribute('data-role') || '';
+        if (src) {
+          openCertModal(src, name, certId, role);
+        }
+      });
+    });
+
+    if (certCloseBtn) {
+      certCloseBtn.addEventListener('click', closeCertModal);
+    }
+
+    certBackdrop.addEventListener('click', (e) => {
+      if (e.target === certBackdrop) {
+        closeCertModal();
+      }
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && certBackdrop.classList.contains('show')) {
+        closeCertModal();
+      }
+    });
+  }
+
 });
