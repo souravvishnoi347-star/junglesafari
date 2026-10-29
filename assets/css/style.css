@@ -289,6 +289,33 @@ p { margin-bottom: 1rem; }
   background: rgba(255, 255, 255, 0.14);
 }
 
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.nav-call {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.12);
+  color: var(--white) !important;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 9px 18px;
+  border-radius: 50px;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+.nav-call:hover {
+  background: #25d366;
+  border-color: #25d366;
+  color: var(--white) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+}
 .nav-cta {
   background: linear-gradient(135deg, var(--accent), var(--accent-dark)) !important;
   color: #121820 !important;
@@ -1279,7 +1306,42 @@ p { margin-bottom: 1rem; }
   color: rgba(255, 255, 255, 0.45);
 }
 
-/* ---------- WhatsApp Float ---------- */
+/* ---------- Floating Call & WhatsApp Action Buttons ---------- */
+.call-float {
+  position: fixed;
+  bottom: 96px;
+  right: 25px;
+  z-index: 9999;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #1b4332, #2d6a4f);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white) !important;
+  box-shadow: 0 6px 25px rgba(27, 67, 50, 0.5);
+  transition: var(--transition);
+  animation: callPulse 2.4s infinite;
+  text-decoration: none;
+}
+.call-float svg {
+  width: 26px;
+  height: 26px;
+  fill: #fff;
+}
+.call-float:hover {
+  transform: scale(1.1);
+  color: var(--white) !important;
+  background: linear-gradient(135deg, #2d6a4f, #1b4332);
+  box-shadow: 0 8px 32px rgba(27, 67, 50, 0.7);
+}
+@keyframes callPulse {
+  0%, 100% { box-shadow: 0 4px 20px rgba(27, 67, 50, 0.45); }
+  50% { box-shadow: 0 6px 30px rgba(232, 160, 32, 0.65); }
+}
+
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -2008,12 +2070,34 @@ p { margin-bottom: 1rem; }
     font-size: 0.82rem !important;
     display: inline-block;
   }
+  .call-float {
+    bottom: 78px !important;
+    right: 18px !important;
+    width: 52px !important;
+    height: 52px !important;
+  }
+  .call-float svg {
+    width: 21px !important;
+    height: 21px !important;
+  }
   .whatsapp-float {
     bottom: 18px !important;
     right: 18px !important;
     width: 52px !important;
     height: 52px !important;
     font-size: 1.55rem !important;
+  }
+  .nav-call {
+    display: inline-flex !important;
+    padding: 6px 14px !important;
+    font-size: 0.82rem !important;
+    background: #1b4332 !important;
+    border-color: #2d6a4f !important;
+  }
+  .nav-actions {
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   /* Content & Inner Pages Mobile Formatting */
