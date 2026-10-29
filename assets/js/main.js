@@ -4,6 +4,14 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* ---------- Environment SEO Protection for Preview / Demo Deployments ---------- */
+  if (window.location && window.location.hostname && window.location.hostname.endsWith('vercel.app')) {
+    const robotsMeta = document.querySelector('meta[name="robots"]');
+    if (robotsMeta) {
+      robotsMeta.setAttribute('content', 'noindex, nofollow, noarchive');
+    }
+  }
+
   /* ---------- Preloader ---------- */
   const preloader = document.getElementById('preloader');
   if (preloader) {
