@@ -287,4 +287,72 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  /* ---------- Booking Inquiry Form Handler (Direct WhatsApp Forwarding + Conversion UI) ---------- */
+  const bookingForm = document.getElementById('bookingForm');
+  if (bookingForm) {
+    bookingForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const fullName = (document.getElementById('fullName')?.value || '').trim();
+      const phone = (document.getElementById('phone')?.value || '').trim();
+      const email = (document.getElementById('email')?.value || '').trim();
+      const destSelect = document.getElementById('destination');
+      const destination = destSelect && destSelect.selectedIndex > 0
+        ? destSelect.options[destSelect.selectedIndex].text
+        : 'Any Available Safari Zone';
+      const date = (document.getElementById('date')?.value || '').trim();
+      const guests = (document.getElementById('guests')?.value || '').trim();
+      const message = (document.getElementById('message')?.value || '').trim();
+
+      // Build WhatsApp inquiry payload
+      let waText = `*New Jungle Safari Booking Inquiry*\n`;
+      waText += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      waText += `👤 *Name:* ${fullName}\n`;
+      waText += `📱 *Phone:* ${phone}\n`;
+      if (email) waText += `✉️ *Email:* ${email}\n`;
+      waText += `📍 *Safari Zone:* ${destination}\n`;
+      if (date) waText += `📅 *Preferred Date:* ${date}\n`;
+      if (guests) waText += `👥 *Number of Guests:* ${guests}\n`;
+      if (message) waText += `💬 *Note / Requirement:* ${message}\n`;
+      waText += `━━━━━━━━━━━━━━━━━━━━━\n`;
+      waText += `Please share gypsy availability and instant booking confirmation.`;
+
+      const waUrl = `https://wa.me/919675667921?text=${encodeURIComponent(waText)}`;
+
+      // Try opening WhatsApp in new window/tab
+      try {
+        window.open(waUrl, '_blank');
+      } catch (err) {
+        // Fallback handled by UI buttons
+      }
+
+      // Display high-converting confirmation card in place of form
+      const formCard = bookingForm.closest('.form-card') || bookingForm.parentElement;
+      if (formCard) {
+        formCard.innerHTML = `
+          <div style="text-align:center; padding: 25px 15px; animation: fadeIn 0.4s ease-out;">
+            <div style="width:68px; height:68px; border-radius:50%; background:#e8f5e9; color:#2e7d32; display:flex; align-items:center; justify-content:center; margin:0 auto 18px; font-size:34px; box-shadow:0 6px 18px rgba(46,125,50,0.18);">✓</div>
+            <h3 style="color:#1b4332; margin-bottom:10px; font-size:1.55rem; font-weight:700;">Inquiry Received!</h3>
+            <p style="color:#4a5568; font-size:1.02rem; line-height:1.6; margin-bottom:18px;">
+              Thank you, <strong>${fullName || 'Guest'}</strong>! Your safari inquiry has been captured. Our duty manager is checking gypsy availability for <strong>${destination}</strong>.
+            </p>
+            <div style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:10px; padding:12px 16px; margin-bottom:22px; font-size:0.92rem; color:#166534;">
+              ⚡ We are forwarding your details to WhatsApp for <strong>instant confirmation</strong>. If chat did not launch automatically, tap below:
+            </div>
+            <div style="display:flex; flex-direction:column; gap:12px; max-width:340px; margin:0 auto;">
+              <a href="${waUrl}" target="_blank" rel="noopener" class="btn" style="background:#25D366; color:#ffffff; text-decoration:none; padding:13px 20px; border-radius:8px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:8px; box-shadow:0 4px 14px rgba(37,211,102,0.35);">
+                💬 Open WhatsApp Chat
+              </a>
+              <a href="tel:+919675667921" class="btn" style="background:#1b4332; color:#ffffff; text-decoration:none; padding:13px 20px; border-radius:8px; font-weight:700; display:flex; align-items:center; justify-content:center; gap:8px;">
+                📞 Call Now (+91 96756 67921)
+              </a>
+            </div>
+            <p style="margin-top:20px; font-size:0.82rem; color:#718096; line-height:1.5;">
+              Certified Local Naturalists • Forest Dept. Registered Gypsies • Transparent Pricing
+            </p>
+          </div>
+        `;
+      }
+    });
+  }
 });
