@@ -2254,11 +2254,37 @@ p { margin-bottom: 1rem; }
   .navbar {
     padding: 12px 0;
   }
+  .navbar .container,
+  .navbar .nav-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .nav-logo {
+    font-size: 1.35rem;
+  }
+  .nav-actions {
+    display: none !important;
+  }
+  .nav-call {
+    display: none !important;
+  }
+  .nav-cta {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+    margin-left: auto !important;
+    z-index: 1001;
+  }
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
     width: 82%;
+    max-width: 320px;
     height: 100vh;
     background: #0d1e13;
     flex-direction: column;
@@ -2266,7 +2292,8 @@ p { margin-bottom: 1rem; }
     padding: 90px 24px 30px;
     gap: 8px;
     transition: var(--transition);
-    box-shadow: var(--shadow-xl);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
   }
   .nav-links.active {
     right: 0;
@@ -2276,23 +2303,24 @@ p { margin-bottom: 1rem; }
     padding: 12px 18px;
     font-size: 1.05rem;
   }
-  .nav-cta {
-    display: none;
-  }
-  .hamburger {
-    display: flex;
-  }
 
   .hero {
-    padding: 110px 0 50px;
+    padding: 105px 0 65px;
     text-align: center;
+  }
+  .hero-content {
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  .hero-text {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 0 10px;
   }
   .hero-bg {
     background: linear-gradient(to bottom, rgba(7, 25, 13, 0.88) 0%, rgba(7, 25, 13, 0.72) 55%, rgba(7, 25, 13, 0.45) 100%),
                 url('../images/safari-gypsy-convoy-sunset.jpg') center center / cover no-repeat !important;
-  }
-  .hero-content {
-    margin: 0 auto;
   }
   .hero h1 {
     font-size: 2.1rem;
@@ -2524,36 +2552,32 @@ p { margin-bottom: 1rem; }
     font-size: 0.82rem !important;
     display: inline-block;
   }
-  .call-float {
-    bottom: 78px !important;
-    left: 18px !important;
+  .whatsapp-float {
+    bottom: 16px !important;
+    left: 16px !important;
     right: auto !important;
-    width: 52px !important;
-    height: 52px !important;
+    width: 48px !important;
+    height: 48px !important;
+    font-size: 1.45rem !important;
+    z-index: 9999 !important;
+  }
+  .call-float {
+    bottom: 16px !important;
+    left: 72px !important;
+    right: auto !important;
+    width: 48px !important;
+    height: 48px !important;
+    z-index: 9999 !important;
   }
   .call-float svg {
-    width: 21px !important;
-    height: 21px !important;
-  }
-  .whatsapp-float {
-    bottom: 18px !important;
-    left: 18px !important;
-    right: auto !important;
-    width: 52px !important;
-    height: 52px !important;
-    font-size: 1.55rem !important;
+    width: 20px !important;
+    height: 20px !important;
   }
   .nav-call {
-    display: inline-flex !important;
-    padding: 6px 14px !important;
-    font-size: 0.82rem !important;
-    background: #1b4332 !important;
-    border-color: #2d6a4f !important;
+    display: none !important;
   }
   .nav-actions {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+    display: none !important;
   }
 
   /* Content & Inner Pages Mobile Formatting */
