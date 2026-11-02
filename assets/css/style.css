@@ -2242,6 +2242,57 @@ p { margin-bottom: 1rem; }
   .guest-moments-grid { grid-template-columns: repeat(2, 1fr); }
   .cert-grid { grid-template-columns: repeat(2, 1fr); }
   .trust-pillars-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Mobile & Tablet Header Navigation (No Phone Number in Header) */
+  .navbar {
+    padding: 12px 0;
+  }
+  .navbar .container,
+  .navbar .nav-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    padding: 0 16px !important;
+  }
+  .nav-logo {
+    font-size: 1.35rem;
+  }
+  .nav-actions,
+  .nav-call,
+  .nav-cta,
+  .desktop-only {
+    display: none !important;
+  }
+  .hamburger {
+    display: flex !important;
+    margin-left: auto !important;
+    z-index: 1001;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 82%;
+    max-width: 320px;
+    height: 100vh;
+    background: #0d1e13;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 90px 24px 30px;
+    gap: 8px;
+    transition: var(--transition);
+    box-shadow: -5px 0 25px rgba(0, 0, 0, 0.6);
+    z-index: 1000;
+  }
+  .nav-links.active {
+    right: 0;
+  }
+  .nav-links a {
+    width: 100%;
+    padding: 12px 18px;
+    font-size: 1.05rem;
+  }
 }
 
 @media (max-width: 768px) {
