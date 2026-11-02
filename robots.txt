@@ -1,5 +1,5 @@
-# Jungle Safari Uttarakhand
-# https://www.junglesafariuttarakhand.com
+# Rajaji Tiger Reserve Safari Uttarakhand
+# https://www.rajajitigerreservesafari.com
 
 User-agent: *
 Allow: /
@@ -9,13 +9,13 @@ Allow: /assets/videos/
 Allow: /assets/css/
 Allow: /assets/js/
 
-Sitemap: https://www.junglesafariuttarakhand.com/sitemap.xml
+Sitemap: https://www.rajajitigerreservesafari.com/sitemap.xml
 
-# Google
+# Googlebot
 User-agent: Googlebot
 Allow: /
 
-# Bing
+# Bingbot
 User-agent: Bingbot
 Allow: /
 
